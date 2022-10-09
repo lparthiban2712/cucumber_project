@@ -1,0 +1,110 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-10-09T07:15:47.944Z",
+        "before": [
+          {
+            "result": {
+              "duration": 55859000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "To Add two numbers",
+        "description": "",
+        "id": "this-feature-would-be-creating-a-calculator-for-add-and-subtract;to-add-two-numbers",
+        "after": [
+          {
+            "result": {
+              "duration": 28508000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I have a calculator",
+            "match": {
+              "location": "stepdefs.CalculatorStepDefs.i_have_a_calculator()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 166000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I add below numbers",
+            "match": {
+              "location": "stepdefs.CalculatorStepDefs.i_add_below_number(java.util.List\u003cjava.lang.Integer\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "1"
+                ]
+              },
+              {
+                "cells": [
+                  "2"
+                ]
+              },
+              {
+                "cells": [
+                  "3"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I should get the result as 6",
+            "match": {
+              "arguments": [
+                {
+                  "val": "6",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefs.CalculatorStepDefs.i_should_get_the_result_as(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@addition"
+          }
+        ]
+      }
+    ],
+    "name": "This feature would be creating a calculator for Add and Subtract",
+    "description": "",
+    "id": "this-feature-would-be-creating-a-calculator-for-add-and-subtract",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Calculator.feature",
+    "tags": []
+  }
+]
